@@ -1,0 +1,45 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <%- include('partials/navbar.ejs') %>    
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="/img/detalhes/<%= detalhe.id%>.png" style="width: 100%;">
+          </div>
+          <div class="col-sm-8">
+            <div style="margin-top: 5%;">
+                <h1 style="font-size: 5em;"><%= detalhe.titulo%></h1>
+                <br>
+                <h2 style="font-size: 4em;"><strong><%= detalhe.preco%></strong></h2>
+                <h3>ou 3x de <%= detalhe.parcelas %></h3>
+                
+                <br>
+                <h1>Tags do produto: </h1>
+                <button type="button" class="btn btn-lg btn-dark" disabled>FEMININO</button>
+                <br>
+                <br>
+                <h1>Cores: </h1>
+                <button type="button" class="btn btn-lg btn-dark" disabled><%= detalhe.cores %></button>
+                <br>
+                <br>
+                <h1>Tamanhos: </h1>
+                <button type="button" class="btn btn-lg btn-dark" disabled><%= detalhe.tamanhos%></button>
+                <br>
+                <br>
+                <a href="https://api.whatsapp.com/send?phone=5554999844103&text=Desejo%20mais%20detalhes%20do%20<%= detalhe.titulo%>" class="btn btn-success btn-lg active" role="button" aria-pressed="true" style="width: 15em;">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    <br>
+    <%- include('partials/footer.ejs') %>
+</body>
+<style>  
+  @media (min-width: 1024px) and (max-width: 2056px) {
+     .container{
+       margin-left: 6%;
+     }
+  }
+</style>

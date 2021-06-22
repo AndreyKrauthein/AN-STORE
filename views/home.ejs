@@ -1,0 +1,243 @@
+<%- include('partials/header.ejs') %>
+<body>
+   <%- include('partials/navbar.ejs') %>
+   
+      
+
+      <!-- imagem topo-->
+      <img id="imagem_topo" src="img/home/foto_head.png">
+
+      <!-- mais produtos -->
+      <section class="exemplo">
+         <img src="img/home/fundo.png" style="width: 100%; padding: 0;border-radius: 0;">    
+         <div class="fundo">
+            <a href="/produtos">
+               <img id="tam_imagem" src="img/home/cima.png">
+            </a>
+         </div>
+      </section>
+
+      <!-- precisa de ajuda -->
+      <section class="exemplo">
+         <img src="img/home/precisadeajuda1360semfundo.png" alt="clique para receber ajuda" style="width: 100%;">
+         <div class="fundo" style="text-align: center; margin-top: 3%;">
+            <div class="row" style="width: 100%;">
+               <div class="col">
+                  <h1>Precisa de ajuda?</h1>
+               </div>
+               <div class="col">
+                  <a href="https://api.whatsapp.com/send?phone=555499844103&text=Ola%2C%20preciso%20de%20ajuda%2C%20voc%C3%AA%20poderia%20me%20auxiliar%3F" style="text-decoration: none;"><h1>Clique aqui</h1></a>
+               </div>
+             </div>
+         </div>
+      </section>
+      
+      
+     <!-- carrousel de imagens -->
+      <div id="background-slide">
+         <br>
+         <br>
+         <!-- texto -->
+         <h1 id="text-promotions">Aproveite <br> nossas <strong> promoções!</strong></h1>
+
+         <!-- carrosel de imagens -->
+         <br>
+         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner">
+               <div class="carousel-item row no-gutters active">
+                  
+                  <div class="col-4 float-left">    
+                        <img id="imagem_carrousel" class="d-block w-100 p-2"; src="img/home/Baby_look.png" alt="1">
+                  </div>
+              
+                  <div class="col-4 float-left">    
+                        <img id="imagem_carrousel" class="d-block w-100 p-2" src="img/home/Blusas_brilho.png" alt="2">
+                  </div>
+              
+                  <div class="col-4 float-left">    
+                        <img id="imagem_carrousel" class="d-block w-100 p-2" src="img/home/Camisas_de_time.png" alt="3">
+                  </div>
+   
+              
+       
+            </div>
+          
+          
+            <div class="carousel-item row no-gutters">
+               
+               <div class="col-4 float-left">    
+                     <img id="imagem_carrousel" class="d-block w-100 p-2" src="img/home/Cropped_la_bella.png" alt="5">
+               </div>
+               
+               <div class="col-4 float-left">    
+                     <img id="imagem_carrousel" class="d-block w-100 p-2" src="img/home/Top_faixa_liso.png" alt="6">
+               </div>
+               
+               <div class="col-4 float-left">    
+                     <img id="imagem_carrousel" class="d-block w-100 p-2" src="img/home/vestido_tubinho.png" alt="7">
+               </div>
+               
+               
+            
+            </div>
+         
+         
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </div>
+   </div>
+
+
+      
+      
+      
+      
+      
+      
+      
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+         
+         @media (min-width: 0px) and (max-width: 425px) {
+            #imagem_topo{
+               margin-top: 6em; 
+               width: 100%; 
+               height: 25em; 
+               padding: 0; 
+               border-radius: 0;
+            }
+            .fundo{
+               text-align: center;
+               margin-top: 1%;
+            }
+            #tam_imagem{
+               width: 50%;
+            }
+         }
+         
+         @media (min-width: 426px) and (max-width: 2560px) {
+            #imagem_topo{
+               margin-top: 6em; 
+               width: 100%; 
+               height: 50em; 
+               padding: 0; 
+               border-radius: 0;
+            }
+            .fundo{
+               text-align: center;
+               margin-top: 6%;
+            }
+            #tam_imagem{
+               width: 40%;
+            }
+         }
+         #background-slide{
+            background-color: #f3705c;
+         }
+         
+         #text-promotions{
+            font-size: 5em;
+            margin: 0;
+
+            text-align: left;
+            font-family: 'Rubik', sans-serif;
+            color: #ffcdaa;
+         }
+         
+         .exemplo {
+            position: relative;
+         }
+
+         .exemplo .fundo {
+            width: 100%;
+            position: absolute;
+            top: 0;
+         }
+
+         
+         @media (min-width: 0px) and (max-width: 320px) {
+            .col h1 {
+               color: white;
+               font-size: 1.5em;
+            }
+            
+            #imagem_carrousel{
+               border-radius: 10px;
+            }
+         }
+         @media (min-width: 321px) and (max-width: 375px) {
+            .col h1 {
+               color: white;
+               font-size: 1.8em;
+            }
+            
+            #imagem_carrousel{
+               border-radius: 10px;
+            }
+            
+         }
+         @media (min-width: 376px) and (max-width: 425px) {
+            .col h1 {
+               color: white;
+               font-size: 2.2em;
+            }
+            
+            #imagem_carrousel{
+               border-radius: 10px;
+            }
+         }
+         @media (min-width: 426px) and (max-width: 768px) {
+            .col h1 {
+               color: white;
+               font-size: 4em;
+            }
+            #imagem_carrousel{
+               border-radius: 20px;
+            }
+         }
+         @media (min-width: 769px) and (max-width: 1440px) {
+            .col h1 {
+               color: white;
+               font-size: 6em;
+            }
+            #imagem_carrousel{
+               border-radius: 30px;
+               
+            }
+         }
+         @media (min-width: 1024px) and (max-width: 1440px) {
+            .col h1 {
+               color: white;
+               font-size: 6em;
+            }
+            #imagem_carrousel{
+               border-radius: 20px;
+            }
+            
+         }
+         @media (min-width: 1440px) and (max-width: 2560px) {
+            .col h1 {
+               color: white;
+               font-size: 11em;
+            }
+            #imagem_carrousel{
+               border-radius: 30px;  
+            }
+         }
+
+      
+   </style>
+  
+  <%- include('partials/footer.ejs') %>
+</body>
+
+
+
+
